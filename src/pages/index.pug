@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    head
+    
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script( defer src="../scripts/script.js") 
+        link(rel="stylesheet", href="../styles/main.css")
+        
+        title Document
+    body 
+        section.roofing 
+            .container 
+                include nav.pug
+                .line 
+                .header 
+                    .headerInfo 
+                      p #[strong Кровельные и фасадные материалы]  в Тюмени и области. 
+                      p Профессиональный монтаж с 2010 года. 
+                    .headerPricePdf 
+                        .circle 
+                            p Pdf 
+                        a(href="#" target="blank")  Скачать прайс-каталог
+                    .headerLogo
+                        .logo 
+                            img(src="../img/logo.png", alt="logo") 
+                    .headerSocialNetwork
+                        p Отвечаем #[strong онлайн]
+                        .socialNetwork 
+                            .viber
+                                a(href="https://www.viber.com/ru/" target="blank")  
+                                    img(src="../img/viber.svg", alt="")
+                            .whatsapp 
+                                a(href="https://www.whatsapp.com/?lang=ru" target="blank") 
+                                    img(src="../img/whatsapp.svg", alt="")
+                            .telegram 
+                                a(href="https://web.telegram.org/" target="blank") 
+                                    img(src="../img/telegram.svg", alt="")
+                    .headerContacts 
+                        p #[strong Пн-Пт] 9:00 - 18:00, #[strong Сб] 10:00 - 18:00
+                        a.number(href="#") 8 (800) 222-54-60
+                        a.call(href="#" id ="btnPopup") Позвоните мне
+                        
+                include home.pug
+        include popup.pug
+        
+        
+           
+
+
+
+
+
+

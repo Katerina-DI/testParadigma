@@ -1,0 +1,190 @@
+.homePage {
+  @include flex-row;
+  justify-content: flex-start;
+  padding-top: 7vw;
+
+  .bulletinsHomePage {
+    @include flex-column;
+    width: 45%;
+    padding: 4vw 0;
+    clip-path: polygon(0px 0%, 100% 2vw, 100% 100%, 0px 100%, 0 50%);
+    @include flex-column;
+
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2vw;
+
+    background: $white;
+    box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
+
+    p {
+      width: 68%;
+      margin: 0;
+      font-family: Montserrat Regular;
+      font-size: 1vw;
+      line-height: 1.5vw;
+      /* or 157% */
+      text-align: center;
+      color: $black;
+    }
+    .shadow {
+      background: url(../img/menu_shadow.png);
+      opacity: 0.5;
+      width: 10vw;
+      height: 2vw;
+    }
+  }
+  .infoHomePage {
+    align-self: center;
+    margin-left: 4vw;
+    .headPage {
+      margin: 0;
+      width: 71%;
+      font-family: Montserrat Regular;
+      font-size: 3.5vw;
+      line-height: 5vw;
+      /* or 155% */
+      color: $black;
+      text-align: center;
+    }
+    .infoHomePageItems {
+      @include flex-row;
+      align-items: center;
+      .infoHomePageItem {
+        @include flex-row;
+
+        .dot1,
+        .dot2,
+        .dot3,
+        .dot4 {
+          width: 9.21px;
+          height: 9.21px;
+          margin-right: 0.3vw;
+          border-radius: 50%;
+        }
+        .dot1 {
+          border: 1.5px solid #12c868;
+        }
+        .dot2 {
+          border: 1.5px solid rgba(18, 200, 104, 0.75);
+        }
+        .dot3 {
+          border: 1.5px solid rgba(18, 200, 104, 0.5);
+        }
+        .dot4 {
+          border: 1.5px solid rgba(18, 200, 104, 0.25);
+        }
+      }
+      .infoHomePageItem {
+        p {
+          font-family: Montserrat Medium;
+          margin-left: 0.5vw;
+          font-size: 2vw;
+          line-height: 3vw;
+          /* identical to box height */
+          color: $black;
+          text-align: center;
+        }
+      }
+    }
+    .infoHomePageButtons {
+      @include flex-row;
+      button {
+        cursor: pointer;
+        @include flex-row;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 23vw;
+        height: 6vw;
+        border-radius: 500px;
+        margin-right: 0.7vw;
+        font-size: 0.9vw;
+        line-height: 1.3vw;
+        /* or 157% */
+        color: $white;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      .cost {
+        p {
+          margin: 0;
+        }
+        background: #12c868;
+        .arrow {
+          content: "\1F855";
+
+          margin-left: 1vw;
+        }
+      }
+      .cost:hover {
+        background: #21e27c;
+
+        .arrow {
+          margin-left: 0.7vw;
+        }
+      }
+      .review {
+        p {
+          margin: 0;
+        }
+        background: #f38120;
+
+        .arrow {
+          content: "\1F855";
+          margin-left: 1vw;
+        }
+      }
+      .review:hover {
+        background: #fd9c49;
+
+        .arrow {
+          margin-left: 0.7vw;
+        }
+      }
+    }
+    .infoHomePageLink {
+      @include flex-row;
+      justify-content: flex-start;
+      margin-top: 2vw;
+
+      .dot {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        background: #f6d0af;
+      }
+      .dot::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        background: #f38120;
+        width: 70%;
+        height: 70%;
+        align-self: center;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 0.9vw;
+        line-height: 1.3vw;
+        /* or 157% */
+        color: $black;
+        font-family: Montserrat Medium;
+        text-align: center;
+        letter-spacing: 0.02em;
+        img {
+          margin-top: 0.2vw;
+        }
+      }
+      .txt {
+        margin-left: 0.2vw;
+        width: 27%;
+      }
+    }
+  }
+}

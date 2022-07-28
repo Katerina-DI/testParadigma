@@ -1,0 +1,32 @@
+.popupRequest#popupRequestId
+    
+    .popupRequestInfo 
+        span.close &times; 
+        h1 Быстро оставить заявку
+        h2 Введите номер, мы позвоним вам в течение 10 минут в рабочее время
+        p Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00
+        .tel Введите номер телефона
+        input(  type="text" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _") 
+        button#btnRequest
+            b Позвоните мне
+            .arrow 	&#10230;
+        
+            
+
+        .privacyPolicy 
+            
+            input#popup.custom-checkbox(onclick='checkPopup()', checked='', type='checkbox', name='popup', value='yes')
+
+            label(for='popup') 
+            a(href="#") Нажимая кнопку вы соглашаетесь  с условиями #[.color Политики конфиденциальности]
+
+
+.popupRequestAccepted#popupRequestAcceptedId
+    
+            .popupRequestInfoAccepted 
+                span.closeAccepted &times; 
+                h1 Ваша заявка принята!
+
+
+script( src="../scripts/script.js") 
+
